@@ -1,7 +1,7 @@
 $blue: #228be6; // 주석 선언
 
 .Button {
-  display: inline-flex;
+  // display: inline-flex; // 글자 정렬 안되어서 뺌
   color: white;
   font-weight: bold;
   outline: none;
@@ -14,12 +14,12 @@ $blue: #228be6; // 주석 선언
   padding-right: 1rem;
   font-size: 1rem;
 
-  background: $blue;
+  background: $blue; // 주석 사용
   &:hover {
-    background: lighten($color: $blue, 10%);
+    background: lighten($blue, 10%);
   }
 
   &:active {
-    background: darken($color: $blue, 10%);
+    background: darken($blue, 10%);
   }
 }
